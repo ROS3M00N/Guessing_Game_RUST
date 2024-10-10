@@ -5,3 +5,5 @@ edition = "2021"
 authors = ["Lucas Dutra Pereira <lucas.dutra7162@gmail.com>"]
 
 [dependencies]
+
+rand = "0.8.5"
