@@ -8,6 +8,7 @@ fn main() {
     println!("Guess the number!");
 
     let secret_num = rand::thread_rng().gen_range(1..101);
+    let mut count = 0;
 
     loop {
         println!("Please input yout guess: ");
@@ -32,6 +33,8 @@ fn main() {
                 println!("YOU WIN!");
                 break;
             }
-        }   
+        }
+        count += 1;
     }
+    println!("You take {} guesses.", count);
 }
